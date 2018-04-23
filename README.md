@@ -2,7 +2,7 @@
 
 Une documentation de docker est disponible dans le <a href='https://github.com/lekpamartin/docker/wiki'>Wiki</a>
 
-<2>Vagrant</h2>
+<h2>Vagrant</h2>
 Nous avons créé deux vagrantfile pour pouvoir tester une architecture Docker. Nous avons deux fichiers car dans une architecture docker (comme toute architecture en cluster) on a la notion de Maître et d'esclave. Les bonnes pratiques demandent de toujours avoir un nombre impair de maître : plus intéressant pour la gestion du quorum. 
 <br>
 Il y a plusieurs orchestrateur qui se partagent le marché mais Kubernetes est de loin le leader. Les nommenclature: <br>
