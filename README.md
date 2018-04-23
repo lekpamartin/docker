@@ -14,3 +14,7 @@ Il y a plusieurs orchestrateur qui se partagent le marché mais Kubernetes est d
 <h3>Maître </h3>
 
 <a href='https://github.com/lekpamartin/vagrant/tree/master/vagrantfile/VirtualBox/centos7_docker_master'>vagrantfile</a>
+
+<h3>Esclave </h3>
+
+<a href='https://github.com/lekpamartin/vagrant/tree/master/vagrantfile/VirtualBox/centos7_docker_slave'>vagrantfile</a>
