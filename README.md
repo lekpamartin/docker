@@ -6,11 +6,11 @@ Une documentation de docker est disponible dans le <a href='https://github.com/l
 Nous avons créé deux vagrantfile pour pouvoir tester une architecture Docker. Nous avons deux fichiers car dans une architecture docker (comme toute architecture en cluster) on a la notion de Maître et d'esclave. Les bonnes pratiques demandent de toujours avoir un nombre impair de maître : plus intéressant pour la gestion du quorum. 
 <br>
 Il y a plusieurs orchestrateur qui se partagent le marché mais Kubernetes est de loin le leader. Les nommenclature: <br>
-<pre><code> - Kubernetes: intialement développé par Google
+<pre><code>- Kubernetes: intialement développé par Google
 - Swarm : développé par Docker. Dans ce dernier on parle de Manager (Maître) et Worker (Esclave)
 </code></pre>
 
 
 <h3>Maître </h3>
 
-<a href=' vagrant/vagrantfile/VirtualBox/centos7_docker_swarm/Vagrantfile '>Manager</a>
+<a href='https://github.com/lekpamartin/vagrant/tree/master/vagrantfile/VirtualBox/centos7_docker_master'>Manager</a>
