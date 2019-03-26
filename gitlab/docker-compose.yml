@@ -1,0 +1,32 @@
+version: '2.1'
+
+networks:
+  softwarefactory-net:
+    driver: bridge
+
+volumes:
+  gitlab_config: {}
+  gitlab_logs: {}
+  gitlab_data: {}
+
+services:
+
+  gitlab:
+    image: 'gitlab/gitlab-ce:latest'
+    restart: unless-stopped
+    hostname: 'gitlab'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url "http://10.154.76.186:8081'
+        # Add any other gitlab.rb configuration here, each on its own line
+    ports:
+      - "8081:80"
+      - "4443:443"
+      - "222:22"
+    volumes:
+      - gitlab_config:/etc/gitlab
+      - gitlab_logs:/var/log/gitlab
+      - gitlab_data:/var/opt/gitlab
+    labels:
+      org.label-schema.group: "softwarefactory"
+      log_type: "gitlab"

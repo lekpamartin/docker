@@ -1,0 +1,8 @@
+{
+  "experimental" : false,
+  "live-restore": true,
+  "userland-proxy": true,
+  "icc": false,
+  "default-address-pools": [ { "base": "172.10.0.0/27", "size": 27 }]
+
+}
